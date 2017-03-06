@@ -13,8 +13,4 @@ public class findATimeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_atime);
     }
-
-    private void nothing() {
-
-    }
 }
