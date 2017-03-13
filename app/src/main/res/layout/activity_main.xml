@@ -13,7 +13,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select the contacts with whom you want to find a time:" />
+        android:text="Select the contacts with whom you want to find a time:"
+        android:id="@+id/textView6" />
 
     <Button
         android:text="OK"
@@ -26,4 +27,24 @@
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:onClick="onOK"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:text="Target Phone Number"
+        tools:text="Target Phone Number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/targetPhone" />
+
 </RelativeLayout>

@@ -28,7 +28,7 @@ public class LaunchActivity extends AppCompatActivity {
         EditText phoneNum = (EditText) findViewById(R.id.phone);
 
         if (validData(name, email, phoneNum)) {
-            FindTheTimeRestClientUsage clientUsage = new FindTheTimeRestClientUsage();
+            FindTheTimeRestClientUsage clientUsage = new FindTheTimeRestClientUsage(new Callback());
             try {
                 clientUsage.postUser(this, name.getText().toString(), email.getText().toString(), phoneNum.getText().toString());
             } catch (JSONException e) {
